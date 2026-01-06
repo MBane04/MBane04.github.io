@@ -419,11 +419,21 @@ body.dark-mode .contact-links {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     nav a {
-        border-bottom: 1px solid #555;
+        padding: 10px 12px;
+        font-size: 0.9em;
+    }
+
+    .dark-mode-btn {
+        padding: 10px 12px;
+    }
+
+    .mode-label {
+        display: none;
     }
 
     .container {
