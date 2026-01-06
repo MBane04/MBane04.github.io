@@ -419,17 +419,19 @@ body.dark-mode .contact-links {
     }
 
     nav ul {
-        flex-direction: row;
         flex-wrap: wrap;
+        gap: 5px;
     }
 
     nav a {
-        padding: 10px 12px;
-        font-size: 0.9em;
+        display: inline-block;
+        padding: 8px 10px;
+        font-size: 0.85em;
+        white-space: nowrap;
     }
 
     .dark-mode-btn {
-        padding: 10px 12px;
+        padding: 8px 10px;
     }
 
     .mode-label {
