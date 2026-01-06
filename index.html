@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mason Bane</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mason Bane</h1>
+        <p>Computer Engineering Student | Embedded Systems & High-Performance Computing | May 2026 Graduate</p>
+        <a href="docs/MasonBaneResumeMaster.pdf" download class="resume-btn">📥 Download Resume</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+            <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+            <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+            <li><a href="#publications"><i class="fas fa-book"></i> Publications</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><button id="dark-mode-toggle" class="dark-mode-btn" title="Toggle dark mode"><i class="fas fa-moon"></i><span class="mode-label">Dark</span></button></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Computer Science student (Computer Engineering) targeting embedded firmware and
+hardware/software integration roles. Proficient in microcontroller programming, low-level C/C++ and ARM
+Assembly, and circuit design. Strong mathematical/analytical skills with research experience.
+            </p>
+            <p style="margin-top: 15px;">
+                Feel free to explore my work below and get in touch if you'd like to collaborate or learn more about 
+                any of my projects.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2><i class="fas fa-folder-open"></i> Projects</h2>
+            
+            <div class="project-card">
+                <h3>N-body Digital Twin of the Left Atrium</h3>
+                <div class="project-meta">Aug. 2024 – Present | Research Project</div>
+                <p class="project-description">
+                    Engineered a parallel N-body model of the left atrium using CUDA, with a 20,000+ node mesh to simulate atrial 
+                    arrhythmias in near real-time. Built an interactive GUI using ImGui to streamline parameter adjustment and visualization, 
+                    making the complex simulation accessible to a broader, non-technical audience. Presented findings at academic conferences, 
+                    demonstrating the tool's potential to improve clinical decision-making and transform training for medical professionals.
+                </p>
+                <p class="project-description"><strong>Highlights:</strong> NIH-funded research (Grant #1R15HL179671-01); <a href="docs/posters/Accepted_Poster_GTC_26.pdf" target="_blank">NVIDIA GTC 2026 poster (PDF)</a>; 1st Place Poster — SIAM Texas/Louisiana Chapter; 1st Place Undergraduate Poster — Tarleton REID Conference.</p>
+                <div class="tags">
+                    <span class="tag">C/C++</span>
+                    <span class="tag">CUDA</span>
+                    <span class="tag">OpenGL</span>
+                    <span class="tag">ImGui</span>
+                    <span class="tag">Linux</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/TSUParticleModelingGroup/New-Left-Atrium-Model.git" target="_blank">View Repository →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>N-Body Simulation of MicroPlastic-Polymer Interactions</h3>
+                <div class="project-meta">May 2024 – Aug. 2024 | Research Project</div>
+                <p class="project-description">
+                    Contributed to a CUDA-based N-body simulation modeling microplastic–polymer interactions, leveraging GPU parallelism for speed 
+                    and OpenGL for real-time 3D visualization. Crafted a user-friendly interface to toggle simulation features with clear visual cues, 
+                    aiding interpretation of complex phenomena. Collaborated with a multidisciplinary team to refine requirements, features, and UX.
+                </p>
+                <p class="project-description"><strong>Highlights:</strong> 1st Place Graduate Poster – Tarleton REID Conference.</p>
+                <div class="tags">
+                    <span class="tag">C/C++</span>
+                    <span class="tag">CUDA</span>
+                    <span class="tag">OpenGL</span>
+                    <span class="tag">Simulation</span>
+                    <span class="tag">Visualization</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/TSUParticleModelingGroup/microPlastics" target="_blank">View Repository →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Analog Pink Noise Generator Circuit</h3>
+                <div class="project-meta">Aug. 2025 – Dec. 2025 | Hardware Design</div>
+                <p class="project-description">
+                    Designed and prototyped a BJT-based pink noise generator with active filter stage using LTSpice for simulation 
+                    and breadboarding for physical implementation. Developed Python scripts to quantitatively compare simulation results 
+                    with an ideal pink noise spectrum, guiding component selection and filter tuning for improved accuracy. Built a physical 
+                    demonstration circuit with audio output, successfully verifying simulation models against real-world performance. 
+                    Collaborated in a two-person team to present comprehensive design methodology, results, and data-driven decision process.
+                </p>
+                <div class="tags">
+                    <span class="tag">LTSpice</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">MATLAB</span>
+                    <span class="tag">Circuit Design</span>
+                    <span class="tag">Signal Processing</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/MBane04/AnalogPinkNoiseGenerator" target="_blank">View Repository →</a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">ARM Assembly</span>
+                        <span class="skill-tag">x86 Assembly</span>
+                        <span class="skill-tag">Bash</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-microchip"></i> Embedded Systems & Microcontrollers</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">STM32</span>
+                        <span class="skill-tag">TIVA-C (TM4C)</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">Cortex-M</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Development Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">CMake</span>
+                        <span class="skill-tag">Visual Studio</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">GDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-drafting-compass"></i> Design & Simulation</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LTSpice</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">Blender</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> GPU & Parallel Computing</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">CUDA</span>
+                        <span class="skill-tag">OpenGL</span>
+                        <span class="skill-tag">ImGui</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="edu-card">
+                <h3>Tarleton State University</h3>
+                <p class="edu-line">B.S. in Computer Science (Concentration: Computer Engineering), Minor in Mathematics • Expected May 2026</p>
+                <p class="edu-line">GPA: 3.94/4.00 (Institutional) • Cumulative: 3.75/4.00</p>
+                <p class="edu-line">Relevant Coursework: Embedded Systems, GPU/Parallel Computing, Digital Logic, Data Structures & Algorithms</p>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications">
+            <h2><i class="fas fa-book"></i> Publications</h2>
+            
+            <div class="publication-card">
+                <h3>"Offloading" Undergraduate Research to the Graphics Processing Unit for Acceleration</h3>
+                <div class="project-meta">SC Workshops '25 (Supercomputing Conference) • 2025</div>
+                <p class="project-description">
+                    This paper presents methods for accelerating undergraduate research computations using GPU parallel processing, 
+                    demonstrating significant performance improvements in scientific computing applications through CUDA implementation.
+                </p>
+                <div class="project-links">
+                    <a href="https://dl.acm.org/doi/10.1145/3731599.3767382" target="_blank">Read Paper →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2><i class="fas fa-handshake"></i> Contact</h2>
+            <p>Feel free to reach out to me:</p>
+            <div class="contact-links">
+                <p>
+                    <i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mbane0525@gmail.com">mbane0525@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/mason-bane">linkedin.com/in/mason-bane</a>
+                </p>
+                <p>
+                    <i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/MBane04">github.com/MBane04</a>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mason Bane. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
