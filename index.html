@@ -45,12 +45,12 @@
                 <h3>N-body Digital Twin of the Left Atrium</h3>
                 <div class="project-meta">Aug. 2024 – Present | Research Project</div>
                 <p class="project-description">
-                    A real-time cardiac simulation that recreates the electrophysiological properties of the human left atrium. Using GPU-accelerated physics with over 13,000 interconnected nodes, the model reproduces dangerous arrhythmias like atrial flutter and micro-reentry that physicians treat with catheter ablation. Through an interactive interface, users can trigger ectopic beats, adjust tissue properties, and perform virtual ablations to test treatment strategies.
+                    <strong>Project Overview:</strong> A real-time cardiac simulation that recreates the electrophysiological properties of the human left atrium. Using GPU-accelerated physics with over 13,000 interconnected nodes, the model reproduces dangerous arrhythmias like atrial flutter and micro-reentry that physicians treat with catheter ablation. Through an interactive interface, users can trigger ectopic beats, adjust tissue properties, and perform virtual ablations to test treatment strategies—creating both a procedural planning tool for cardiologists and a training platform for medical students.
                 </p>
                 <p class="project-description">
-                    My role evolved from optimizing CUDA kernels for performance to building the GUI that makes this complexity accessible. The result is a tool that cardiologists can use for procedural planning and a training platform where medical students can practice ablations without patient risk. It bridges the gap between computational research and practical clinical application—showing how the right visualization can turn massive simulations into something physicians actually want to use.
+                    <strong>My Contribution:</strong> My role evolved from optimizing CUDA kernels for computational performance to architecting and building the interactive GUI that makes this complexity accessible to medical professionals. I developed the visualization system that translates 13,000+ node interactions into intuitive real-time graphics, implemented the user controls for triggering ectopic beats and performing virtual ablations, and optimized the rendering pipeline to maintain smooth performance during intensive simulations. The result bridges the gap between computational research and practical clinical application—turning a high-performance physics simulation into a tool physicians actually want to use.
                 </p>
-                <p class="project-description"><strong>Highlights:</strong> NIH-funded research (Grant #1R15HL179671-01); <a href="docs/posters/Accepted_Poster_GTC_26.pdf" target="_blank">NVIDIA GTC 2026 poster (PDF)</a>; 1st Place Poster — SIAM Texas/Louisiana Chapter; 1st Place Undergraduate Poster — Tarleton REID Conference.</p>
+                <p class="project-description"><strong>Highlights:</strong> NIH-funded research (Grant #1R15HL179671-01); <a href="docs/posters/Accepted_Poster_GTC_26.pdf" target="_blank">NVIDIA GTC 2026 poster (PDF)</a>; 1st Place Poster — SIAM Texas/Louisiana Chapter 2024; 1st Place Undergraduate Poster — Tarleton REID Conference 2025.</p>
                 <div class="project-image">
                     <img src="https://raw.githubusercontent.com/MBane04/web-Cardiac-Digital-Twin/main/assets/RealLA.jpg" alt="Real Left Atrium Mesh Model">
                 </div>
@@ -71,11 +71,18 @@
                 <h3>N-Body Simulation of MicroPlastic-Polymer Interactions</h3>
                 <div class="project-meta">May 2024 – Aug. 2024 | Research Project</div>
                 <p class="project-description">
-                    Contributed to a CUDA-based N-body simulation modeling microplastic–polymer interactions, leveraging GPU parallelism for speed 
-                    and OpenGL for real-time 3D visualization. Crafted a user-friendly interface to toggle simulation features with clear visual cues, 
-                    aiding interpretation of complex phenomena. Collaborated with a multidisciplinary team to refine requirements, features, and UX.
+                    <strong>Project Overview:</strong> A CUDA-accelerated N-body simulation modeling the interaction between microplastics and okra polymers to study microplastic removal from water. This research aimed to reduce expensive and time-consuming lab experiments by providing a computational testbed for rapidly evaluating coagulation and stirring dynamics.
                 </p>
-                <p class="project-description"><strong>Highlights:</strong> 1st Place Graduate Poster – Tarleton REID Conference.</p>
+                <p class="project-description">
+                    <strong>My Contribution:</strong> I was directly involved in building this entire simulation from the ground up. I programmed the real-time 3D visualization using OpenGL, developed the physics engine for stirring dynamics, and worked closely with the chemistry team to translate their mathematical models into working simulation code. The coagulation algorithms were derived from chemical equations provided by the chemistry researchers, which I implemented to accurately represent how okra polymers bind with microplastics. By creating this tool, we enabled rapid iteration on experimental parameters without the need for physical lab setups, significantly accelerating the research timeline.
+                </p>
+                <div class="project-media">
+                    <video controls preload="metadata" style="width:100%; border-radius:8px; background:#0b0e12;">
+                        <source src="../micro-plastics/assets/simulation-demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="project-description"><strong>Highlights:</strong> 1st Place Graduate Poster – Tarleton REID Conference 2025.</p>
                 <div class="tags">
                     <span class="tag">C/C++</span>
                     <span class="tag">CUDA</span>
@@ -85,6 +92,7 @@
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/TSUParticleModelingGroup/microPlastics" target="_blank">View Repository →</a>
+                    <a href="../micro-plastics/" target="_blank">View Project Page →</a>
                 </div>
             </div>
 
@@ -92,7 +100,10 @@
                 <h3>Analog Pink Noise Generator Circuit</h3>
                 <div class="project-meta">Aug. 2025 – Dec. 2025 | Hardware Design</div>
                 <p class="project-description">
-                    End-to-end analog pink-noise generator: reverse-biased BC337-16 for the noise source, passive RC shelves for the -3 dB/octave spectrum, and a TL072 gain stage with adjustable output on +/-9 V batteries. Validated in LTSpice, Python analysis scripts, and bench measurements; page links to schematics, spectra, audio samples, BOM, and build photos.
+                    <strong>Project Overview:</strong> An end-to-end analog pink-noise generator using a reverse-biased BC337-16 transistor for the noise source, passive RC shelves to shape the -3 dB/octave spectrum, and a TL072 gain stage with adjustable output powered by +/-9 V batteries.
+                </p>
+                <p class="project-description">
+                    <strong>My Contribution:</strong> Working with a partner, I helped design the circuit schematic from component selection through final topology. I wrote Python scripts to validate our theoretical model against expected performance characteristics and simulated the circuit in LTSpice to verify frequency response before building. I was hands-on in the physical construction, assembling the circuit on breadboard and performing bench measurements to confirm it met our design specifications. The project page includes full schematics, spectral analysis, audio samples, bill of materials, and build photos documenting the entire design process.
                 </p>
                 <div class="project-image">
                     <img src="https://raw.githubusercontent.com/MBane04/AnalogPinkNoiseGenerator/main/images/breadboard/FinalBreadboard.jpg" alt="Final Breadboard Implementation">
