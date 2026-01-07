@@ -45,12 +45,15 @@
                 <h3>N-body Digital Twin of the Left Atrium</h3>
                 <div class="project-meta">Aug. 2024 – Present | Research Project</div>
                 <p class="project-description">
-                    Engineered a parallel N-body model of the left atrium using CUDA, with a 20,000+ node mesh to simulate atrial 
-                    arrhythmias in near real-time. Built an interactive GUI using ImGui to streamline parameter adjustment and visualization, 
-                    making the complex simulation accessible to a broader, non-technical audience. Presented findings at academic conferences, 
-                    demonstrating the tool's potential to improve clinical decision-making and transform training for medical professionals.
+                    A real-time cardiac simulation that recreates the electrophysiological properties of the human left atrium. Using GPU-accelerated physics with over 13,000 interconnected nodes, the model reproduces dangerous arrhythmias like atrial flutter and micro-reentry that physicians treat with catheter ablation. Through an interactive interface, users can trigger ectopic beats, adjust tissue properties, and perform virtual ablations to test treatment strategies.
+                </p>
+                <p class="project-description">
+                    My role evolved from optimizing CUDA kernels for performance to building the GUI that makes this complexity accessible. The result is a tool that cardiologists can use for procedural planning and a training platform where medical students can practice ablations without patient risk. It bridges the gap between computational research and practical clinical application—showing how the right visualization can turn massive simulations into something physicians actually want to use.
                 </p>
                 <p class="project-description"><strong>Highlights:</strong> NIH-funded research (Grant #1R15HL179671-01); <a href="docs/posters/Accepted_Poster_GTC_26.pdf" target="_blank">NVIDIA GTC 2026 poster (PDF)</a>; 1st Place Poster — SIAM Texas/Louisiana Chapter; 1st Place Undergraduate Poster — Tarleton REID Conference.</p>
+                <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/MBane04/web-Cardiac-Digital-Twin/main/assets/RealLA.jpg" alt="Real Left Atrium Mesh Model">
+                </div>
                 <div class="tags">
                     <span class="tag">C/C++</span>
                     <span class="tag">CUDA</span>
@@ -59,6 +62,7 @@
                     <span class="tag">Linux</span>
                 </div>
                 <div class="project-links">
+                    <a href="https://mbane04.github.io/web-Cardiac-Digital-Twin/" target="_blank">View Project Site →</a>
                     <a href="https://github.com/TSUParticleModelingGroup/New-Left-Atrium-Model.git" target="_blank">View Repository →</a>
                 </div>
             </div>
@@ -88,11 +92,7 @@
                 <h3>Analog Pink Noise Generator Circuit</h3>
                 <div class="project-meta">Aug. 2025 – Dec. 2025 | Hardware Design</div>
                 <p class="project-description">
-                    Designed and prototyped a BJT-based pink noise generator with active filter stage using LTSpice for simulation 
-                    and breadboarding for physical implementation. Developed Python scripts to quantitatively compare simulation results 
-                    with an ideal pink noise spectrum, guiding component selection and filter tuning for improved accuracy. Built a physical 
-                    demonstration circuit with audio output, successfully verifying simulation models against real-world performance. 
-                    Collaborated in a two-person team to present comprehensive design methodology, results, and data-driven decision process.
+                    End-to-end analog pink-noise generator: reverse-biased BC337-16 for the noise source, passive RC shelves for the -3 dB/octave spectrum, and a TL072 gain stage with adjustable output on +/-9 V batteries. Validated in LTSpice, Python analysis scripts, and bench measurements; page links to schematics, spectra, audio samples, BOM, and build photos.
                 </p>
                 <div class="project-image">
                     <img src="https://raw.githubusercontent.com/MBane04/AnalogPinkNoiseGenerator/main/images/breadboard/FinalBreadboard.jpg" alt="Final Breadboard Implementation">
