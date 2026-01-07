@@ -100,3 +100,42 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Video modal open/close
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('video-modal');
+    const modalVideo = document.getElementById('video-modal-video');
+    const closeBtn = document.getElementById('video-modal-close');
+    const inlineVideo = document.querySelector('.project-video video');
+
+    if (!modal || !modalVideo) return;
+
+    // Open modal when inline video is clicked
+    if (inlineVideo) {
+        inlineVideo.addEventListener('click', function() {
+            const src = inlineVideo.currentSrc || (inlineVideo.querySelector('source')?.src);
+            if (!src) return;
+            inlineVideo.pause();
+            modalVideo.src = src;
+            modal.classList.add('active');
+            modalVideo.play().catch(() => {});
+        });
+    }
+
+    const closeModal = () => {
+        modal.classList.remove('active');
+        modalVideo.pause();
+        modalVideo.currentTime = 0;
+        modalVideo.src = '';
+    };
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+});

@@ -44,6 +44,13 @@
             <div class="project-card">
                 <h3>N-body Digital Twin of the Left Atrium</h3>
                 <div class="project-meta">Aug. 2024 – Present | Research Project</div>
+                <div class="tags">
+                    <span class="tag">C/C++</span>
+                    <span class="tag">CUDA</span>
+                    <span class="tag">OpenGL</span>
+                    <span class="tag">ImGui</span>
+                    <span class="tag">Linux</span>
+                </div>
                 <p class="project-description">
                     <strong>Project Overview:</strong> A real-time cardiac simulation that recreates the electrophysiological properties of the human left atrium. Using GPU-accelerated physics with over 13,000 interconnected nodes, the model reproduces dangerous arrhythmias like atrial flutter and micro-reentry that physicians treat with catheter ablation. Through an interactive interface, users can trigger ectopic beats, adjust tissue properties, and perform virtual ablations to test treatment strategies—creating both a procedural planning tool for cardiologists and a training platform for medical students.
                 </p>
@@ -53,13 +60,7 @@
                 <p class="project-description"><strong>Highlights:</strong> NIH-funded research (Grant #1R15HL179671-01); <a href="docs/posters/Accepted_Poster_GTC_26.pdf" target="_blank">NVIDIA GTC 2026 poster (PDF)</a>; 1st Place Poster — SIAM Texas/Louisiana Chapter 2024; 1st Place Undergraduate Poster — Tarleton REID Conference 2025.</p>
                 <div class="project-image">
                     <img src="https://raw.githubusercontent.com/MBane04/web-Cardiac-Digital-Twin/main/assets/RealLA.jpg" alt="Real Left Atrium Mesh Model">
-                </div>
-                <div class="tags">
-                    <span class="tag">C/C++</span>
-                    <span class="tag">CUDA</span>
-                    <span class="tag">OpenGL</span>
-                    <span class="tag">ImGui</span>
-                    <span class="tag">Linux</span>
+                    <figcaption>Real LA geometry derived from open-source patient data</figcaption>
                 </div>
                 <div class="project-links">
                     <a href="https://mbane04.github.io/web-Cardiac-Digital-Twin/" target="_blank">View Project Site →</a>
@@ -70,19 +71,6 @@
             <div class="project-card">
                 <h3>N-Body Simulation of MicroPlastic-Polymer Interactions</h3>
                 <div class="project-meta">May 2024 – Aug. 2024 | Research Project</div>
-                <p class="project-description">
-                    <strong>Project Overview:</strong> A CUDA-accelerated N-body simulation modeling the interaction between microplastics and okra polymers to study microplastic removal from water. This research aimed to reduce expensive and time-consuming lab experiments by providing a computational testbed for rapidly evaluating coagulation and stirring dynamics.
-                </p>
-                <p class="project-description">
-                    <strong>My Contribution:</strong> I was directly involved in building this entire simulation from the ground up. I programmed the real-time 3D visualization using OpenGL, developed the physics engine for stirring dynamics, and worked closely with the chemistry team to translate their mathematical models into working simulation code. The coagulation algorithms were derived from chemical equations provided by the chemistry researchers, which I implemented to accurately represent how okra polymers bind with microplastics. By creating this tool, we enabled rapid iteration on experimental parameters without the need for physical lab setups, significantly accelerating the research timeline.
-                </p>
-                <div class="project-media">
-                    <video controls preload="metadata" style="width:100%; border-radius:8px; background:#0b0e12;">
-                        <source src="../micro-plastics/assets/simulation-demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <p class="project-description"><strong>Highlights:</strong> 1st Place Graduate Poster – Tarleton REID Conference 2025.</p>
                 <div class="tags">
                     <span class="tag">C/C++</span>
                     <span class="tag">CUDA</span>
@@ -90,15 +78,36 @@
                     <span class="tag">Simulation</span>
                     <span class="tag">Visualization</span>
                 </div>
+                <p class="project-description">
+                    <strong>Project Overview:</strong> A CUDA-accelerated N-body simulation modeling the interaction between microplastics and okra polymers to study microplastic removal from water. This research aimed to reduce expensive and time-consuming lab experiments by providing a computational testbed for rapidly evaluating coagulation and stirring dynamics.
+                </p>
+                <p class="project-description">
+                    <strong>My Contribution:</strong> I was directly involved in building this entire simulation from the ground up. I programmed the real-time 3D visualization using OpenGL, developed the physics engine for stirring dynamics, and worked closely with the chemistry team to translate their mathematical models into working simulation code. The coagulation algorithms were derived from chemical equations provided by the chemistry researchers, which I implemented to accurately represent how okra polymers bind with microplastics. By creating this tool, we enabled rapid iteration on experimental parameters without the need for physical lab setups, significantly accelerating the research timeline.
+                </p>
+                <p class="project-description"><strong>Highlights:</strong> 1st Place Graduate Poster – Tarleton REID Conference 2025.</p>
+                <div class="project-video">
+                    <video controls preload="metadata">
+                        <source src="https://mbane04.github.io/micro-plastics/assets/coagulation-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Live accelerated simulation of microplastics coagulation</figcaption>
+                </div>
                 <div class="project-links">
+                    <a href="https://mbane04.github.io/micro-plastics/" target="_blank">View Project Site →</a>
                     <a href="https://github.com/TSUParticleModelingGroup/microPlastics" target="_blank">View Repository →</a>
-                    <a href="../micro-plastics/" target="_blank">View Project Page →</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Analog Pink Noise Generator Circuit</h3>
                 <div class="project-meta">Aug. 2025 – Dec. 2025 | Hardware Design</div>
+                <div class="tags">
+                    <span class="tag">LTSpice</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">MATLAB</span>
+                    <span class="tag">Circuit Design</span>
+                    <span class="tag">Signal Processing</span>
+                </div>
                 <p class="project-description">
                     <strong>Project Overview:</strong> An end-to-end analog pink-noise generator using a reverse-biased BC337-16 transistor for the noise source, passive RC shelves to shape the -3 dB/octave spectrum, and a TL072 gain stage with adjustable output powered by +/-9 V batteries.
                 </p>
@@ -107,13 +116,7 @@
                 </p>
                 <div class="project-image">
                     <img src="https://raw.githubusercontent.com/MBane04/AnalogPinkNoiseGenerator/main/images/breadboard/FinalBreadboard.jpg" alt="Final Breadboard Implementation">
-                </div>
-                <div class="tags">
-                    <span class="tag">LTSpice</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">MATLAB</span>
-                    <span class="tag">Circuit Design</span>
-                    <span class="tag">Signal Processing</span>
+                    <figcaption>Breadboard implementation of the pink noise generator</figcaption>
                 </div>
                 <div class="project-links">
                     <a href="https://mbane04.github.io/AnalogPinkNoiseGenerator/" target="_blank">View Project Site →</a>
@@ -224,6 +227,14 @@
                 </p>
             </div>
         </section>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal" aria-hidden="true" role="dialog">
+        <div class="video-modal-content" role="document">
+            <button id="video-modal-close" class="video-modal-close" aria-label="Close">✕</button>
+            <video id="video-modal-video" controls preload="metadata"></video>
+        </div>
     </div>
 
     <footer>

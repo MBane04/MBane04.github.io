@@ -209,6 +209,21 @@ body.dark-mode .project-image {
     display: block;
 }
 
+.project-image figcaption,
+.project-video figcaption {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+body.dark-mode .project-image figcaption,
+body.dark-mode .project-video figcaption {
+    color: #a0a0a0;
+}
+
 body.dark-mode .project-card h3,
 body.dark-mode .publication-card h3 {
     color: #e0e0e0;
@@ -291,6 +306,56 @@ body.dark-mode .award-details {
 .project-links a:hover {
     color: #764ba2;
     text-decoration: underline;
+}
+
+/* Centered, smaller project video */
+.project-video {
+    max-width: 520px;
+    margin: 12px auto 18px;
+}
+.project-video video {
+    width: 100%;
+    border-radius: 8px;
+    background: #000;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+body.dark-mode .project-video video {
+    border-color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Video Modal */
+.video-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.video-modal.active { display: flex; }
+.video-modal-content {
+    background: #000;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    position: relative;
+}
+.video-modal-content video { width: 100%; height: auto; display: block; }
+.video-modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
 }
 
 .award {
